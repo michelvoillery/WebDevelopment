@@ -6,8 +6,8 @@
 class Config(object):
     # Replace `YOUR_USERNAME_HERE` and `YOUR_PASSWORD_HERE` with your RuTracker username and password
     # Do not remove the `u` marker nor the '' quote characters
-    username = u 'MikeZeFrench'
-    password = u 'pPYpn76uXzurqK'
+    username = u'MikeZeFrench'
+    password = u'pPYpn76uXzurqK'
 
     # If you want to use magnet links instead of torrent files for downloading, uncomment `download_type`
     # download_type = 'MAGNET_LINK'
@@ -274,9 +274,11 @@ class RuTrackerMagnetLinks(RuTrackerBase):
       on the API `get_limit` limit for query parameters. It will be less
       responsive than the regular version, especially for searches with a huge
       number of results and if your connection is slow or rate-limited.
+
     It is however usable from the web GUI, whereas the regular version cannot be
     used with the web GUI until https://github.com/qbittorrent/qBittorrent/issues/11150
     is fixed.
+
     Since magnet links are self-sufficient, RuTracker authentication data is not
     required for downloading. This version simply does not register the
     `download_torrent` function expected by the qBittorrent API, in which case
